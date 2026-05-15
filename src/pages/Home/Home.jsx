@@ -10,15 +10,12 @@ import Services from "./Services";
 export default function Home () {
     return (
         <>
-            <Nav />
             <Hero />
             <About />
             <Leadership />
             <Services />
             <Projects />
             <Contact />
-
-            <Footer />
         </>
     )
 }
