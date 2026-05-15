@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- CUSTOM COLORS --- */
+  /* Page 1 - Dubai */
+  --color-gold-main: #c9a45c;
+  --color-gold-lt: #e8c87a;
+  --color-gold-dk: #9f7c3b;
+  --color-navy-p1: #0d1b2e;
+  --color-n2: #112032;
+  --color-n3: #172d43;
+  --color-cream: #f8f4ee;
+  --color-parch: #f0e9da;
+
+  /* Page 2 - Harison / Dholera */
+  --color-navy: #0d1b3e;
+  --color-navy2: #162248;
+  --color-rblue: #1a4db3;
+  --color-rmid: #2563eb;
+  --color-rlt: #dbeafe;
+  --color-gold: #b08840;
+  --color-goldlt: #e8c97a;
+  --color-goldpal: #fbf5e6;
+  --color-rg: #f5f6fa;
+  --color-rs2: #f0f2f8;
+  --color-rbdr: #e2e6f0;
+  --color-rbds: #c5cce0;
+  --color-rtxt: #1a1f36;
+  --color-rtxt2: #3d4566;
+  --color-rmuted: #7b83a0;
+  --color-rgreen: #16a34a;
+  --color-rgnpal: #f0fdf4;
+  --color-ramber: #d97706;
+  --color-rambpal: #fffbeb;
+  --color-theme-green: #1b3e17;
+
+  /* --- CUSTOM FONTS --- */
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-fair: "Playfair Display", serif;
+}
+
+@layer base {
+  /* =========================================
+     CORMORANT GARAMOND
+     ========================================= */
+
+  /* Light - 300 */
+  @font-face {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("../fonts/cormorant-garamond-v21-latin-300.woff2") format("woff2");
+  }
+
+  /* Regular - 400 */
+  @font-face {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/cormorant-garamond-v21-latin-regular.woff2")
+      format("woff2");
+  }
+
+  /* Medium - 500 */
+  @font-face {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/cormorant-garamond-v21-latin-500.woff2") format("woff2");
+  }
+
+  /* SemiBold - 600 */
+  @font-face {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/cormorant-garamond-v21-latin-600.woff2") format("woff2");
+  }
+
+  /* =========================================
+     DM SANS
+     ========================================= */
+
+  /* Light - 300 */
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("../fonts/dm-sans-v17-latin-300.woff2") format("woff2");
+  }
+
+  /* Regular - 400 */
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/dm-sans-v17-latin-regular.woff2") format("woff2");
+  }
+
+  /* Medium - 500 */
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/dm-sans-v17-latin-500.woff2") format("woff2");
+  }
+
+  /* SemiBold - 600 */
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/dm-sans-v17-latin-600.woff2") format("woff2");
+  }
+
+  /* Regular - 400 */
+  @font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/playfair-display-v40-latin-regular.woff2")
+      format("woff2");
+  }
+}
