@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import Home from './pages/Home/Home'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import Dholera from './pages/Dholera/Dholera'
+import { Outlet } from 'react-router'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Nav />
-      {/* <Home /> */}
-      <Dholera />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   )

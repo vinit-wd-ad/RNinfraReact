@@ -7,6 +7,7 @@ import {
     FaLinkedin,
     FaYoutube,
 } from "react-icons/fa";
+import { NavLink } from "react-router";
 
 export default function Nav() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -61,7 +62,7 @@ export default function Nav() {
         <nav className="fixed top-0 left-0 right-0 w-full z-[600] bg-white/95 backdrop-blur-md border-b border-rbdr shadow-[0_1px_24px_rgba(13,27,62,.06)]">
             <div className="flex items-center justify-between px-5 md:px-14 py-[1rem] min-w-0">
                 {/* LOGO */}
-                <a href="./" className="flex flex-col no-underline">
+                <NavLink to="/" className="flex flex-col no-underline">
                     <span className="font-serif text-[1.1rem] md:text-[1.4rem] font-semibold tracking-[.07em] text-navy uppercase">
                         <img
                             src={Logo}
@@ -69,7 +70,7 @@ export default function Nav() {
                             alt="RisingNegusInfra Logo"
                         />
                     </span>
-                </a>
+                </NavLink>
 
                 {/* DESKTOP MENU */}
                 <ul className="hidden lg:flex items-center gap-[.1rem] list-none">
@@ -221,13 +222,10 @@ export default function Nav() {
                         {projectsOpen && (
                             <ul className="dropdown-panel">
                                 <li>
-                                    <a
-                                        href="dholera"
-                                        className="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors"
-                                    >
+                                    <NavLink to="/dholera" className="flex items-center gap-3 px-5 py-3 text-[.68rem] tracking-[.1em] uppercase text-rtxt2 border-b border-rbdr hover:bg-rlt hover:text-rblue no-underline transition-colors" end>
                                         <span>🌿</span>
                                         Dholera Smart City
-                                    </a>
+                                    </NavLink>
                                 </li>
 
                                 <li>
